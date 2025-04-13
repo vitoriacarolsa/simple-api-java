@@ -1,5 +1,9 @@
 package com.github.fiap.simple_api_java.controller;
 
+<<<<<<< HEAD
+=======
+import static org.junit.jupiter.api.Assertions.fail;
+>>>>>>> c4bd24377418b2d898a422e418a57af2c3f70af2
 import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.BDDMockito.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -56,6 +60,7 @@ public class ProdutoControllerTest {
     @DisplayName("test fail")
     @Test
     void testGivenNewProduto_whenCreate_thenFail() throws Exception{
+<<<<<<< HEAD
         
         given(service.saveOrUpdate(any(Produto.class)))
             .willAnswer((invocation) -> invocation.getArguments()[0]);
@@ -67,6 +72,9 @@ public class ProdutoControllerTest {
             .content(body));
 
         response.andExpect(status().isNotFound());
+=======
+        // fail("Um erro acontecerá");
+>>>>>>> c4bd24377418b2d898a422e418a57af2c3f70af2
     }
     
 }
